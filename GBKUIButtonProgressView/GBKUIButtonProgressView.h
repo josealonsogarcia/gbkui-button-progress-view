@@ -17,6 +17,8 @@
 @property (assign, nonatomic, readonly) CGFloat progress;
 @property (assign, nonatomic, readonly) BOOL isProgressing;
 @property (assign, nonatomic, readonly) BOOL isComplete;
+@property (weak, nonatomic) IBOutlet UIButton *button;
+
 
 - (void)startProgressing;
 - (void)completeProgressing;

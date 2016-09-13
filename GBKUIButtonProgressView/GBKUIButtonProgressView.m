@@ -24,7 +24,6 @@ typedef NS_ENUM(NSInteger, GBKUIButtonProgressState) {
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIView *borderView;
-@property (weak, nonatomic) IBOutlet UIButton *button;
 @property (weak, nonatomic) IBOutlet UIImageView *pause;
 
 @property (strong, nonatomic) UIImageView *arcContainer;
