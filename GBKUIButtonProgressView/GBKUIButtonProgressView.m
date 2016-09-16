@@ -11,14 +11,6 @@
 #import "GBKUIButtonProgressView.h"
 #import "GBKUIButtonAnimations.h"
 
-typedef NS_ENUM(NSInteger, GBKUIButtonProgressState) {
-    GBKUIButtonProgressInitial,
-    GBKUIButtonProgressShrinking,
-    GBKUIButtonProgressProgressing,
-    GBKUIButtonProgressExpandingToComplete,
-    GBKUIButtonProgressExpandingToInitial,
-    GBKUIButtonProgressCompleted
-};
 
 @interface GBKUIButtonProgressView()
 
@@ -30,9 +22,6 @@ typedef NS_ENUM(NSInteger, GBKUIButtonProgressState) {
 @property (strong, nonatomic) CAShapeLayer *arc;
 
 @property (nonatomic) float expandDuration;
-
-// initial -> shrinking -> progressing -> expanding -> completed
-@property (assign, nonatomic) GBKUIButtonProgressState state;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthContraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *labelLeadingContstraint;
